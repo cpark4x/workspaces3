@@ -53,6 +53,8 @@ Available tools:
   Inputs: query, max_results (optional)
 - codeact: Generate and execute Python code
   Inputs: action (description of what to do)
+- browser: Automate browser actions (navigate, extract, screenshot)
+  Operations: navigate (url), extract (selector), screenshot (path), close
 
 Your task:
 1. Analyze the user's goal

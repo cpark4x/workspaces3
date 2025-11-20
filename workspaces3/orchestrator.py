@@ -45,6 +45,7 @@ class Orchestrator:
         workspace_dir.mkdir(exist_ok=True)
 
         from workspaces3.sandbox.python_executor import PythonExecutor
+        from workspaces3.tools.browser import BrowserTool
         from workspaces3.tools.codeact import CodeActTool
         from workspaces3.tools.web_search import WebSearchTool
 
@@ -54,6 +55,7 @@ class Orchestrator:
         tools = {
             "filesystem": FileSystemTool(workspace_dir),
             "codeact": CodeActTool(python_executor),
+            "browser": BrowserTool(headless=True),
         }
 
         if os.getenv("TAVILY_API_KEY"):
