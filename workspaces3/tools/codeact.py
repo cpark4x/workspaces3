@@ -37,7 +37,7 @@ class CodeActTool(Tool):
         """
         self.executor = executor
         self.agent: Agent[None, CodeAction] = Agent(
-            model=model or "claude-3-5-sonnet-20241022",
+            model=model or "claude-3-opus-20240229",
             output_type=CodeAction,
             instructions=self._get_system_prompt(),
         )

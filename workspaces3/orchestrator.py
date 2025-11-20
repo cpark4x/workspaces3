@@ -5,9 +5,13 @@ import os
 from datetime import datetime
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 from workspaces3.agent.loop import AgentLoop
 from workspaces3.agent.planner import Planner
 from workspaces3.tools.filesystem import FileSystemTool
+
+load_dotenv()
 
 
 class Orchestrator:

@@ -33,7 +33,7 @@ class Synthesizer:
             model: LLM model for synthesis
         """
         self.agent: Agent[None, SynthesisResult] = Agent(
-            model=model or "claude-3-5-sonnet-20241022",
+            model=model or "claude-3-opus-20240229",
             output_type=SynthesisResult,
             instructions=self._get_system_prompt(),
         )

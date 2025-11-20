@@ -32,7 +32,7 @@ class Planner:
     into ordered steps with status tracking.
     """
 
-    def __init__(self, model_name: str = "claude-3-5-sonnet-20241022", model: Any = None) -> None:
+    def __init__(self, model_name: str = "claude-3-opus-20240229", model: Any = None) -> None:
         if model is None:
             self.model = AnthropicModel(model_name)
         else:
